@@ -1,0 +1,200 @@
+/* One shared palette for every page section, component and interaction. */
+:root {
+  --navy: #172e40;
+  --cream: #ffffff;
+  --muted: #52626d;
+  --orange: #c28b65;
+  --paper: #ffffff;
+  --surface: #ffffff;
+  --mist: #f3f5f5;
+  --line: #dce1e1;
+  --copper-ink: #955232;
+}
+body { background: var(--paper); color: var(--navy); }
+header { background: #ffffff; border-bottom: 1px solid var(--line); }
+.topbar { background: var(--navy); color: #f8f7f3; }
+header nav::before { border-color: #172e4029; }
+nav a:hover, .text-link:hover, .reference-links a:hover strong { color: var(--copper-ink); }
+.brandmark { color: #aa6d47; }
+.languages button { color: var(--muted); }
+.languages button.active { color: var(--navy); border-color: #aa6d47; }
+.nav-cta, .button { background: var(--navy); color: #fff; box-shadow: none; }
+.nav-cta:hover, .button:hover { background: #29485c; }
+.hero-copy { background: var(--paper); }
+.hero-art { background: #e4eaeb; background-image: none; }
+.hero-copy em, .about-visual em { color: var(--copper-ink); }
+.hero-foot { border-color: #cfd7d9; color: var(--muted); }
+.orbit { border-color: #b2c0c566; }
+.ticket { background: #fff; box-shadow: 0 25px 65px #172e401a; }
+.ticket-top { background: var(--navy); }
+.ticket-route small { color: var(--muted); }
+.ticket-bottom { border-color: #bbc7cc; }
+.destination { background: #fff; box-shadow: 0 8px 25px #172e4010; }
+.destination > span, .route-line { color: #a46440; }
+.flight-path path { stroke: #a46440; opacity: .75; }
+.flying-plane svg { fill: var(--navy); }
+.motion-toggle { background: #fcfbf8; color: var(--navy); border-color: #cbd4d8; }
+.ribbon { background: #e8edee; color: #294254; border-block: 1px solid #d6dee1; }
+.ribbon b { color: #a46440; }
+.section { border-bottom: 1px solid var(--line); }
+.courses, .faq-section { background: var(--paper); }
+.course, .course.blue, .course.dark {
+  background: var(--surface); color: var(--navy); border: 1px solid var(--line);
+  border-top: 3px solid #b78462; box-shadow: 0 5px 18px #172e4004;
+}
+.course p { color: var(--muted); opacity: 1; }
+.course-top { color: #455c6b; }
+.tags, .course-link { border-color: var(--line); }
+.tags { color: var(--muted); }
+.course-link { color: var(--navy); font-weight: 600; }
+.price del { color: #65737d; opacity: 1; }
+.offer-price-label, .dark .offer-price-label { color: var(--copper-ink); }
+.course-details { background: #fff; }
+.detail-grid article { border-top: 2px solid #b78462; }
+.detail-grid .detail-level { color: var(--navy); }
+.learning-process { background: var(--mist); }
+.steps article > span { background: var(--navy); color: #fff; }
+.steps h3 { color: var(--navy); }
+.language-video { background: var(--paper); }
+.video-copy li { border-color: var(--line); }
+.video-copy li span { color: var(--copper-ink); }
+.video-player { background: var(--navy); box-shadow: 0 16px 40px #172e4014; }
+.video-caption, .offline-status { color: var(--muted); }
+.about { background: #fff; }
+.about-visual { background: #e8edeb; border: 1px solid #dce4e1; }
+.globe { color: #8da7a145; }
+.about-row { border-color: var(--line); }
+.about-row > span { color: var(--copper-ink); }
+.references { background: var(--mist); }
+.reference-links a { border-color: #d1dadd; }
+.reference-links a > span:first-child { color: var(--muted); }
+.faq-list details, .faq-list details:last-child { border-color: var(--line); }
+.contact { background: var(--navy); color: #fff; border: 0; }
+.contact .eyebrow { color: #dfb291; }
+.contact p { color: #d0dce2; }
+.contact .button { background: #e0b18f; color: #172e40; }
+.contact .button:hover { background: #edc7aa; }
+.contact-info small { color: #bfced6; }
+.contact-info > div { border-color: #ffffff2e; }
+footer { background: var(--paper); border-top: 1px solid #dce1e1; }
+footer { flex-wrap: wrap; gap: 24px 28px; }
+.footer-journey { display: flex; flex-basis: 100%; align-items: center; justify-content: space-between; gap: 20px; padding-top: 22px; border-top: 1px solid var(--line); order: 4; }
+.footer-journey span { font-size: 14px; line-height: 1.7; color: var(--muted); }
+.footer-journey a { font-size: 15px; color: var(--navy); font-weight: 600; white-space: nowrap; }
+@media(max-width:700px) { .footer-journey { align-items: flex-start; flex-direction: column; gap: 12px; } }
+.enrolment-offer { background: #f0ebe3; color: var(--navy); border-bottom: 1px solid #e1d8cb; }
+.offer-seal { background: #dfb999; color: #172e40; }
+.enrolment-offer > a { background: var(--navy); color: #fff; }
+.enrolment-offer > a:hover { background: #29485c; }
+.offer-note { background: #f2eee7; color: #455965; border-left-color: #b78462; }
+.journey-progress { background: #b78462; }
+.anti-gravity { background: var(--navy); color: #f8f7f3; border-bottom: 1px solid #ffffff15; }
+.gravity-copy .eyebrow, .gravity-passport > span:first-child { color: #dfb291; }
+.gravity-copy h2 { color: #fcfbf8; }
+.gravity-copy > p:not(.eyebrow) { color: #c7d4dc; }
+.gravity-pause { color: #d4dfe5; }
+.gravity-passport { background: #243f52; box-shadow: 0 20px 35px #0003; }
+.gravity-passport small { color: #d5e0e6; }
+.passport-globe { color: #dfb291; }
+.gravity-chip { color: #172e40; background: #f4f1ea; }
+.gravity-plane { fill: #dfb291; }
+.gravity-star { color: #d4ad8d; }
+@keyframes headline-glow {
+  0%,100% { translate: 0 0; color: #955232; }
+  50% { translate: 0 -5px; color: #824629; }
+}
+@keyframes cta-glow {
+  0%,100% { box-shadow: 0 0 0 0 #172e4015; }
+  50% { box-shadow: 0 0 0 8px #172e4000; }
+}
+
+/* A smaller hero with a measured, line-by-line entrance. */
+.hero-copy h1 { font-size: clamp(52px,5.2vw,76px); line-height: 1.12; letter-spacing: -3px; margin-bottom: 22px; }
+.hero-copy .intro { font-size: 16px; line-height: 1.8; max-width: 430px; }
+.hero-copy .button, .hero-copy .text-link { font-size: 14px; }
+.hero-line { display: block; }
+.hero-line:nth-child(2) { --line-delay: .14s; }
+.hero-line:nth-child(3) { --line-delay: .28s; }
+.motion-enabled .hero-copy h1:not(.reveal-pending) .hero-line { animation: hero-line-enter 1s cubic-bezier(.2,.65,.25,1) var(--line-delay,0s) both; }
+.motion-enabled .hero-copy .intro:not(.reveal-pending) { animation: hero-copy-enter 1s ease .35s both; }
+.motion-enabled .hero-copy .hero-actions:not(.reveal-pending) { animation: hero-copy-enter 1s ease .5s both; }
+@keyframes hero-line-enter { from { opacity: 0; transform: translateY(22px); filter: blur(2px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
+@keyframes hero-copy-enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@media(max-width:700px) { .hero-copy h1 { font-size: clamp(42px,10.5vw,60px); letter-spacing: -2px; } .hero-copy .intro { font-size: 15px; } }
+@media(prefers-reduced-motion:reduce) { .hero-line { opacity: 1; transform: none; filter: none; } }
+
+/* Boarding pass: a quiet slate canvas and a precise, level ticket. */
+.hero-art { background: #eef1f3; border-left: 1px solid #e0e6e9; }
+.hero-art .orbit { border-color: #9bafb61f; }
+.hero-art .orbit-two { display: none; }
+.hero-art .flight-cloud { display: none; }
+.hero-art .flight-path { opacity: .2; }
+.hero-art .flight-path path { stroke: #718792; stroke-width: 1; }
+.hero-art .flying-plane { width: 58px; height: 58px; filter: drop-shadow(0 4px 5px #172e401a); z-index: 0; }
+.hero-art .flight-scene { z-index: 0; }
+.hero-art .plane-trail { top: 26px; right: 48px; height: 2px; width: 75px; opacity: .4; box-shadow: none; background: linear-gradient(90deg,transparent,#718792); }
+.ticket { width: 82%; max-width: 470px; background: #fff; border: 1px solid #d9e1e5; border-radius: 12px; overflow: hidden; transform: none; box-shadow: 0 22px 50px #172e4012,0 2px 5px #172e4005; }
+.ticket-top { background: #172e40; padding: 19px 24px; font-size: 9px; letter-spacing: 1.45px; line-height: 1.6; gap: 14px; align-items: center; }
+.ticket-top > span:last-child { color: #dfb999; font-size: 18px; flex-shrink: 0; }
+.ticket .logo-window { width: calc(100% - 48px); margin: 28px auto 15px; aspect-ratio: 5.05; }
+.ticket-route { display: grid; grid-template-columns: minmax(0,1fr) 58px minmax(0,1fr); gap: 14px; align-items: center; padding: 25px 26px 30px; }
+.ticket-route > div:last-child { text-align: right; }
+.ticket-route small { font-size: 9px; font-weight: 600; letter-spacing: 2px; color: #60727e; margin-bottom: 10px; }
+.ticket-route strong { font-size: 27px; font-weight: 600; letter-spacing: -1px; line-height: 1.25; }
+.ticket-route span:not(.route-line) { display: inline-block; font-size: 11px; line-height: 1.6; color: #60727e; margin-top: 5px; }
+.ticket-route .route-line { position: relative; display: block; height: 26px; font-size: 0; }
+.ticket-route .route-line::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; border-top: 1px dashed #bcc8cf; }
+.ticket-route .route-line::after { content: '✈'; position: absolute; inset: 0; display: grid; place-items: center; margin: auto; width: 25px; background: #fff; font-size: 18px; color: #9c6542; }
+.ticket-bottom { background: #f8fafb; border-top: 1px dashed #cbd5da; padding: 18px 24px; gap: 12px; font-size: 8px; letter-spacing: .8px; line-height: 1.7; }
+.ticket-bottom .barcode { font-size: 24px; color: #172e40; letter-spacing: -2px; white-space: nowrap; }
+.hero-art .destination { left: 9%; right: 9%; bottom: 65px; padding: 17px 20px; transform: none; border: 1px solid #d9e1e5; border-radius: 8px; background: #ffffffd9; box-shadow: 0 5px 18px #172e4005; align-items: center; gap: 14px; }
+.destination > span { display: grid; place-items: center; background: #f0e8df; color: #955232; width: 38px; height: 38px; border-radius: 50%; font-size: 23px; }
+.destination small { color: #60727e; font-size: 9px; letter-spacing: 1.6px; margin-bottom: 5px; }
+.destination strong { color: #172e40; font-size: 14px; font-weight: 600; }
+.hero-art .art-caption { color: #60727e; font-size: 8px; letter-spacing: 2.5px; bottom: 28px; }
+.hero-art .motion-toggle { bottom: auto; top: 22px; right: 22px; background: #fff9; border-color: #ccd6dc; font-size: 10px; padding: 7px 10px; }
+.motion-enabled .hero-art .destination:not(.reveal-pending) { animation: none; }
+
+/* Image-led course cards with shared language badges and clear pricing. */
+.course-grid { gap: 25px; align-items: stretch; }
+.course, .course.blue, .course.dark { padding: 0; border: 1px solid #dfe5e8; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 8px 24px #172e4006; }
+.course-media { position: relative; aspect-ratio: 1.8; overflow: hidden; background: #dce5e9; flex-shrink: 0; }
+.course-media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg,#172e4015 0%,transparent 45%,#0a202bd9 100%); pointer-events: none; }
+.course-photo { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.course-media .course-top { position: absolute; z-index: 1; inset: 17px 17px auto; margin: 0; gap: 12px; }
+.course-top > span:first-child { color: #172e40; background: #ffffffed; border: 1px solid #ffffff88; border-radius: 30px; font-size: 9px; letter-spacing: 1px; padding: 8px 12px; font-weight: 700; }
+.course-media .flag { display: grid; place-items: center; background: #fff; border: 3px solid #fff; border-radius: 5px; box-shadow: 0 2px 8px #172e4020; line-height: 0; }
+.course-media .flag img { width: 36px; height: 24px; object-fit: cover; border-radius: 2px; }
+.course-location { position: absolute; z-index: 1; left: 23px; bottom: 20px; color: #fff; font-size: 10px; letter-spacing: 1.5px; font-weight: 600; max-width: 75%; line-height: 1.7; }
+.photo-credit { position: absolute; z-index: 1; right: 17px; bottom: 20px; color: #ffffffd9; font-size: 9px; text-decoration: underline; text-underline-offset: 3px; }
+.course-body { padding: 25px; flex: 1; display: flex; flex-direction: column; }
+.course-body .course-kicker { color: #60727e; font-size: 9px; line-height: 1.5; letter-spacing: 1.1px; min-height: 0; margin: 0 0 13px; font-weight: 600; }
+.course-title { display: flex; align-items: center; gap: 12px; margin-bottom: 17px; }
+.course-title h3 { margin: 0; font-size: 30px; line-height: 1.2; font-weight: 600; }
+.exam-symbol { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 9px; background: #f0eae2; color: #955232; flex-shrink: 0; }
+.exam-symbol svg { width: 25px; height: 25px; }
+.course-body > p:not(.course-kicker) { font-size: 14px; line-height: 1.85; min-height: 78px; margin-bottom: 18px; color: #52626d; }
+.course-body .tags { font-size: 10px; line-height: 1.8; padding: 13px 0; margin-top: auto; border-bottom: 0; border-top: 1px solid #e3e8eb; color: #52626d; }
+.course-body .price { padding: 19px 0 21px; border-top: 1px solid #e3e8eb; display: flex; align-items: baseline; flex-wrap: wrap; gap: 3px 6px; }
+.course-body .offer-price-label { display: block; flex-basis: 100%; width: 100%; font-size: 9px; letter-spacing: .5px; margin: 0 0 10px; color: #955232; }
+.course-body .price del { flex-basis: 100%; display: block; font-size: 14px; color: #70808a; margin-bottom: 1px; }
+.course-body .price strong { font-size: 32px; letter-spacing: -1px; }
+.course-body .price small { font-size: 10px; color: #52626d; }
+.course-body .course-link { margin-top: 0; padding: 15px 18px; text-align: center; background: #172e40; color: #fff; border: 1px solid #172e40; border-radius: 5px; font-size: 12px; line-height: 1.6; font-weight: 600; transition: background .2s ease; }
+.course-body .course-link:hover { background: #29485c; }
+@media(hover:hover) { .course:hover .course-photo { transform: scale(1.04); } }
+@media(max-width:1100px) and (min-width:701px) { .course-grid { gap: 16px; } .course-body { padding: 20px; } .course-title h3 { font-size: 25px; } .course-body > p:not(.course-kicker) { min-height: 104px; } .course-location { font-size: 9px; left: 16px; letter-spacing: .5px; } }
+@media(max-width:700px) { .course-grid { gap: 27px; } .course-media { aspect-ratio: 1.75; } .course-body { padding: 25px; } .course-body > p:not(.course-kicker) { min-height: 0; font-size: 15px; } .course-body .course-link { font-size: 13px; } }
+@media(max-width:1000px) { .ticket-route { padding-inline: 20px; gap: 8px; grid-template-columns: minmax(0,1fr) 36px minmax(0,1fr); } .ticket-route strong { font-size: 24px; } .ticket-top { padding-inline: 20px; font-size: 8px; letter-spacing: 1px; } .ticket-bottom { padding-inline: 20px; font-size: 7px; } }
+@media(max-width:700px) {
+  .hero-art { min-height: 570px; border-left: 0; border-top: 1px solid #e0e6e9; padding-bottom: 65px; }
+  .ticket { width: 87%; max-width: 420px; }
+  .ticket .logo-window { width: calc(100% - 40px); margin-top: 25px; }
+  .ticket-route { padding: 20px; }
+  .ticket-route strong { font-size: 24px; }
+  .ticket-route span:not(.route-line) { font-size: 10px; }
+  .hero-art .destination { bottom: 58px; left: 6.5%; right: 6.5%; padding: 14px 16px; }
+  .destination strong { font-size: 13px; }
+  .hero-art .art-caption { font-size: 7px; bottom: 22px; }
+  .hero-art .motion-toggle { top: 17px; right: 6.5%; }
+}
