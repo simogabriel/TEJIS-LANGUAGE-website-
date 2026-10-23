@@ -11,3 +11,11 @@ Country flags are local SVG artwork. Exam names are plain text identifiers of th
 ## Contact icon
 
 WhatsApp logotype, sourced from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:WhatsApp.svg
+
+## Additional course city photography
+
+- Russian: Saint Basil’s Cathedral, Moscow, Nikolay Vorobyev. https://unsplash.com/photos/saint-basils-cathedral-moscow-russia-jaH3QF46gAY
+- Spanish: Madrid skyline, Alessandro Rossi. https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-6-xnH0BLNWI
+- Beginner English uses the credited London photograph above.
+
+All course photographs are stored locally and used under the Unsplash License.
