@@ -1,5 +1,5 @@
-const CACHE = 'tejis-offline-2026-10-20-v15';
-const ASSETS = ['/', '/index.html', '/style.css', '/enhancements.css', '/professional.css', '/color-system.css', '/hero-redesign.css', '/responsive-carousel.css', '/closing-sections.css', '/carousels.js', '/app.js', '/animations.js', '/assets/tejis-classes.jpg', '/assets/whatsapp.svg', ...['english','french','german'].map(lang=>`/assets/course-${lang}.jpg`), ...['uk','fr','de'].map(flag=>`/assets/flag-${flag}.svg`), ...['en','fr','de'].flatMap(lang => ['mp4','jpg','vtt'].map(ext => `/assets/language-tests-${lang}.${ext}`))];
+const CACHE = 'tejis-offline-2026-10-23-v17';
+const ASSETS = ['/assets/tejis-logo.svg', '/language-offerings.css', '/assets/flag-ru.svg', '/assets/flag-es.svg','/', '/index.html', '/style.css', '/enhancements.css', '/professional.css', '/color-system.css', '/hero-redesign.css', '/responsive-carousel.css', '/closing-sections.css', '/carousels.js', '/app.js', '/animations.js', '/assets/tejis-classes.jpg', '/assets/whatsapp.svg', ...['english','french','german'].map(lang=>`/assets/course-${lang}.jpg`), ...['uk','fr','de'].map(flag=>`/assets/flag-${flag}.svg`), ...['en','fr','de'].flatMap(lang => ['mp4','jpg','vtt'].map(ext => `/assets/language-tests-${lang}.${ext}`))];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
